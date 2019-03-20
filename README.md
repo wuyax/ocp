@@ -12,7 +12,8 @@ CSS属性排序规则
 ## 为什么要给CSS属性排序
   给CSS属性排序是一个各执己见的问题，很多人觉得没必要，但是统计结果却不这么认为:
   ![img](./resource/orgchart.png)
-  在一份调查中有**45%**的人认为应该按照类型来给CSS属性分组和排序，我当然也是其中之一。
+  
+  在一份调查中有45%的人认为应该按照类型来给CSS属性分组和排序，我当然也是其中之一。
 
 ## CSS属性顺序
   1. 影响文档流的属性（比如：display, position, float, clear, visibility, table-layout等） 
@@ -29,7 +30,9 @@ CSS属性排序规则
 
 ## 参考链接
 [Poll Results: How do you order your CSS properties?](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
+
 [idiomatic-css](https://github.com/necolas/idiomatic-css/tree/master/translations/zh-CN)
+
 [Ordering CSS3 Properties](https://css-tricks.com/ordering-css3-properties/)
 
 ## 贡献
