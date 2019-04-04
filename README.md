@@ -28,12 +28,21 @@ CSS属性排序规则
   3. 有人测试了其它的字符作为CSS中的连字符，结果除了`-`之外都失败了，你可以戳这个链接查看结果[test css hyphen](https://codepen.io/wuyax/pen/pYOpGK);
   4. 因此，我本在CSS class的命名中强烈建议只使用 `-`
 
+## CSS编写规则
+  1. 避免使用`html`标签作为`css`选择器；
+  2. 不要使用id选择器，[When using IDs can be a pain in the class...](https://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/)
+  3. 在使用属性简写的时候你要清楚你在做什么，否则请使用完整的属性名。比如`line-height:30px;font:12px Arial;`这两行代码会得到和你想的不一样的结果。
+  4. 慎用`margin-top`，尽量使用`padding-top`或者`margin-bottom`来解决，如果你非要使用，务必注意**外变局重叠问题**，一般加一个`.clearfix`(全局引入了该类的情况下)
+  5. 慎用`!improtant`，除了要去覆盖用JS设置的样式外，你还用`!important`就是偷懒！，当然JS设置的样式也能用哪个JS更改，因此，完可以避免使用`!important`。如果非得要用，那么写下注释，告诉别人是为了解决什么问题！
+
 ## 参考链接
 [Poll Results: How do you order your CSS properties?](https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/)
 
 [idiomatic-css](https://github.com/necolas/idiomatic-css/tree/master/translations/zh-CN)
 
 [Ordering CSS3 Properties](https://css-tricks.com/ordering-css3-properties/)
+
+[Dropbox (S)CSS Style Guide](https://github.com/dropbox/css-style-guide)
 
 ## 贡献
 如果你有更好的建议或者对规则列表的补充欢迎提交PR。
